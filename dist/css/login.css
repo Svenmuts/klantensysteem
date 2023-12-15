@@ -52,4 +52,25 @@ input[type=submit]:hover {
   background-color: #ffffff;
   color: #8F754F;
   transition: 0.5s;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid #8F754F;
+  border-radius: 0.5rem;
+  width: 20rem;
+  margin-top: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #8F754F;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #8F754F;
+  transition: 0.5s;
 }/*# sourceMappingURL=login.css.map */
