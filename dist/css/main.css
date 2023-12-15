@@ -2,4 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+body h1 {
+  font-family: "arial";
+  color: #8F754F;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+body label {
+  font-family: "arial";
+  color: #8F754F;
+  font-size: 1rem;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

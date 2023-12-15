@@ -1,2 +1,35 @@
 @import './resets.scss';
 @import './variables.scss';
+
+
+
+$font-size-base: 1rem;
+$font-size-lg: 2rem;
+$margin-base: 2rem;
+
+@mixin font-form {
+  font-family: $font-form;
+  color: $primary-color;
+}
+
+body {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  h1 {
+    @include font-form;
+    font-size: $font-size-lg;
+    margin-bottom: $margin-base;
+  }
+
+  label {
+    @include font-form;
+    font-size: $font-size-base;
+    font-weight: bold;
+  }
+}
+
