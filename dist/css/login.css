@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: #8F754F;
+  font-family: "arial";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+label {
+  font-size: 1rem;
+}
+
+input {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid #8F754F;
+  border-radius: 0.5rem;
+  width: 20rem;
+  margin-top: 1rem;
+}
+
+input[type=submit] {
+  background-color: #8F754F;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #8F754F;
+  transition: 0.5s;
+}/*# sourceMappingURL=login.css.map */
