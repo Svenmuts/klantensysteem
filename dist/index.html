@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Registratiepagina</title>
+  <script src="./javascript/index.js"></script>
+</head>
+<body>
+  <h2>Registratie</h2>
+  <form action="./php/registratie_database.php" method="post" onsubmit="return checkPasswords()">
+    <label for="username">Gebruikersnaam (e-mail):</label><br>
+    <input type="email" id="username" name="username" required><br><br>
+
+    <label for="password">Wachtwoord:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm_password">Bevestig Wachtwoord:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+
+    <input type="submit" value="Registreren">
+    <a href="./page/login.html">Inloggen</a>
+  </form>
+</body>
+</html>
