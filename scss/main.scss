@@ -25,6 +25,12 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+}
+
+label {
+  @include font-form;
+  font-size: 1rem;
 }
 
 input {
@@ -35,7 +41,6 @@ input {
   border: 1px solid $primary-color;
   border-radius: 0.5rem;
   width: 20rem;
-
 }
 
 input[type='submit']{
@@ -43,6 +48,7 @@ input[type='submit']{
   color: $background-color;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: 0.5s;
 }
 
 a {
@@ -58,5 +64,19 @@ a {
   text-decoration: none;
   text-align: center;
   font-weight: bold;
+  transition: 0.5s;
+  margin-bottom: 2rem;
+}
+
+input[type='submit']:hover {
+  background-color: $background-color;
+  color: $primary-color;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: $background-color;
+  color: $primary-color;
+  transition: 0.5s;
 }
 

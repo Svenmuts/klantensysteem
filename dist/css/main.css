@@ -24,6 +24,13 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+}
+
+label {
+  font-family: "arial";
+  color: #8F754F;
+  font-size: 1rem;
 }
 
 input {
@@ -42,6 +49,7 @@ input[type=submit] {
   color: #ffffff;
   cursor: pointer;
   margin-bottom: 10px;
+  transition: 0.5s;
 }
 
 a {
@@ -58,4 +66,18 @@ a {
   text-decoration: none;
   text-align: center;
   font-weight: bold;
+  transition: 0.5s;
+  margin-bottom: 2rem;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+  color: #8F754F;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #8F754F;
+  transition: 0.5s;
 }/*# sourceMappingURL=main.css.map */
