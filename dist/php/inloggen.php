@@ -7,7 +7,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error); // Stop de uitvoering als er een verbindingsfout is
 }
 
-// Check if the form has been submitted
+// Controleer of het formulier is ingediend
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['gebruikersnaam'], $_POST['wachtwoord'])) {
@@ -25,10 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $result->fetch_assoc();
 
         if ($user && password_verify($wachtwoord, $user['wachtwoord_hash'])) {
-            // Password is correct, start a new session and save the user's username to the session
+            // Wachtwoord is correct, start een nieuwe sessie en sla de gebruikersnaam van de gebruiker op in de sessie
             session_start();
             $_SESSION['gebruikersnaam'] = $gebruikersnaam;
-            header("Location: succes.php"); // Redirect to a success page
+            header("Location: succes.php"); // Stuur de gebruiker door naar de homepage
         } else {
             echo "Inloggen mislukt!";
         }
