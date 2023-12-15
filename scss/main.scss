@@ -1,12 +1,6 @@
 @import './resets.scss';
 @import './variables.scss';
 
-
-
-$font-size-base: 1rem;
-$font-size-lg: 2rem;
-$margin-base: 2rem;
-
 @mixin font-form {
   font-family: $font-form;
   color: $primary-color;
@@ -19,17 +13,50 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
 
-  h1 {
-    @include font-form;
-    font-size: $font-size-lg;
-    margin-bottom: $margin-base;
-  }
+h1 {
+  @include font-form;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
 
-  label {
-    @include font-form;
-    font-size: $font-size-base;
-    font-weight: bold;
-  }
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
+  @include font-form;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid $primary-color;
+  border-radius: 0.5rem;
+  width: 20rem;
+
+}
+
+input[type='submit']{
+  background-color: $primary-color;
+  color: $background-color;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+a {
+  @include font-form;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid $primary-color;
+  border-radius: 0.5rem;
+  width: 20rem;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: $background-color;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
 }
 

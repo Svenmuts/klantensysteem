@@ -12,15 +12,50 @@ body {
   justify-content: center;
   height: 100vh;
 }
-body h1 {
+
+h1 {
   font-family: "arial";
   color: #8F754F;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
-body label {
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input {
   font-family: "arial";
   color: #8F754F;
   font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border: 1px solid #8F754F;
+  border-radius: 0.5rem;
+  width: 20rem;
+}
+
+input[type=submit] {
+  background-color: #8F754F;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+a {
+  font-family: "arial";
+  color: #8F754F;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #8F754F;
+  border-radius: 0.5rem;
+  width: 20rem;
+  cursor: pointer;
+  background-color: #8F754F;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
   font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
